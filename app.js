@@ -28,8 +28,8 @@ const initValues = () => {
    resetValues();
 
    $slider.value = height;
-   $weight.value = weight;
-   $age.value = age
+   $weight.innerHTML = weight;
+   $age.innerHTML = age
 
    setHeightText();
 
@@ -42,10 +42,10 @@ const initValues = () => {
 const addInactive = () => $genderCards.forEach(el => el.classList.add("inactive"));
 const setHeightText = () => document.querySelector(".height > .val").innerHTML = height;
 const setBmiText = () => document.querySelector(".bmi").innerHTML = bmi;
-const decrementWeight = () => $weight.value = --weight;
-const incrementWeight = () => $weight.value = ++weight;
-const decrementAge = () => $age.value = --age;
-const incrementAge = () => $age.value = ++age;
+const decrementWeight = () => $weight.innerHTML = --weight;
+const incrementWeight = () => $weight.innerHTML = ++weight;
+const decrementAge = () => $age.innerHTML = --age;
+const incrementAge = () => $age.innerHTML = ++age;
 const calculateBmi = () => weight / Math.pow(height / 100, 2);
 
 initValues();
