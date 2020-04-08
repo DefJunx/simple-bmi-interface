@@ -7,7 +7,7 @@
   --primary: #1d1e33;
   --secondary: #111328;
   --accent: #eb1555;
-  --slider-thumb: #bd1044;
+  --accent-contrast: #bd1044;
   --default-radius: 5px;
 }
 
@@ -87,12 +87,6 @@ button:focus {
   height: 5px;
   border-radius: 5px;
   outline: none;
-  opacity: 0.8;
-  transition: opacity 0.2s;
-}
-
-.slider:hover {
-  opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
@@ -101,7 +95,7 @@ button:focus {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--slider-thumb);
+  background: var(--accent);
   cursor: ew-resize;
 }
 
@@ -162,7 +156,7 @@ button:focus {
 }
 
 .primary:active {
-  background: var(--slider-thumb);
+  background: var(--accent-contrast);
 }
 
 .bmi {
